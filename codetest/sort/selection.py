@@ -3,10 +3,10 @@
 array = [7, 5, 9, 0, 3, 1, 6, 2, 4, 8]
 
 for i in range(len(array)):
-    min_index = i  # 가장 적은 원소의 인덱스
-    for j in range(i+1, len(array)):
-        if array[min_index] > array[j]:
-            min_index = j
+    min_index = i  # 가장 적은 원소의 인덱스 #0
+    for j in range(i+1, len(array)):  # 1~10
+        if array[min_index] > array[j]:  # array[0]>array[1]....
+            min_index = j  # min_index== 4
     array[i], array[min_index] = array[min_index], array[i]  # 스와프
 
 print(array)
